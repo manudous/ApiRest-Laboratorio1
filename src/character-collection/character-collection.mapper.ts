@@ -1,15 +1,15 @@
-import * as apiModel from './Api/character.api-model';
-import * as viewModel from './character.collection.vm';
+import * as apiModel from './Api/character-collection.api-model';
+import * as viewModel from './character-collection.vm';
 
 export const mapFromCharacterApiCollecionToVm = (
   characters: apiModel.ApiEntity[]
-): viewModel.CharacterEntityVm[] => {
+): viewModel.CharacterCollectionEntityVm[] => {
   return characters.map((character) => mapFromCharacterApiToVm(character));
 };
 
 const mapFromCharacterApiToVm = (
   character: apiModel.ApiEntity
-): viewModel.CharacterEntityVm => ({
+): viewModel.CharacterCollectionEntityVm => ({
   id: character.id,
   name: character.name,
   status: character.status,

@@ -1,9 +1,8 @@
-export interface characterApiEntity {
+export interface CharacterCollectionEntityVm {
   id: string;
   name: string;
   image: string;
   status: string;
   gender: string;
-  species: string;
-  bestSentences: string[];
+  species: string
 }

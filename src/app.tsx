@@ -1,11 +1,8 @@
-import {Characters} from './character/character.container'
 import React from 'react';
-
+import { RoutesComponent } from './core/routes/routesComponent';
 
 const App: React.FunctionComponent = () => {
-  return <Characters />;
+  return <RoutesComponent />;
 };
-
-
 
 export default App;

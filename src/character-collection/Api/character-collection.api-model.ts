@@ -1,4 +1,4 @@
-export interface CharacterEntityVm {
+export interface ApiEntity {
   id: string;
   name: string;
   image: string;

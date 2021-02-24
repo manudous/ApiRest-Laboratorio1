@@ -1,4 +1,4 @@
-export interface characterApiEntity {
+export interface CharacterEntityVm {
   id: string;
   name: string;
   image: string;
@@ -7,3 +7,4 @@ export interface characterApiEntity {
   species: string;
   bestSentences: string[];
 }
+

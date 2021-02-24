@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, generatePath } from 'react-router-dom';
 import {
   withStyles,
   Theme,
@@ -64,7 +65,9 @@ export default function CustomizedTables({ characterCollection }) {
                   <img src={character.image} alt="" style={{ width: '7rem' }} />
                 </StyledTableCell>
                 <StyledTableCell align="right">
-                  {character.name}
+                  <Link
+                    to={generatePath("characters/:id", {character.id})}
+                  >{character.name}</Link>
                 </StyledTableCell>
                 <StyledTableCell align="right">
                   {character.status}
